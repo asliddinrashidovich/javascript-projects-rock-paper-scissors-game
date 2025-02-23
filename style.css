@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    background: linear-gradient(45deg ,blue, lightblue);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+}
+.card {
+    width: 500px;
+    background: #fff;
+    box-shadow: 6px 7px 3px -1px rgba(0,0,0,0.75);
+    padding: 20px;
+    border-radius: 15px;
+    background-color:
+    #F7F7F7;
+}
+.players {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.header {
+    margin: 30px;
+    font-size: 40px;
+}
+.player-1 {
+    width: 50%;
+    position: relative;
+}
+.player-2 {
+    width: 50%;
+    position: relative;
+}
+.player-1 .p1 {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+}
+.point div{
+    height: 20px;
+    margin: 3px 0;
+    color: #fff;
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.tie {
+    background-color: orange;
+    width: 30px;
+}
+.win {
+    background: green;
+    width: 50px;
+}
+.lost {
+    background: red;
+    width: 40px;
+}
+.player-2 .p2 {
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+.point p {
+    margin-left: 10px;
+}
+.point2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.point2 p {
+    margin-right: 7px;
+}
+.point {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start  ;
+}
+.point2 div {
+    height: 20px;
+    margin: 3px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.point2 {
+    position: absolute;
+    right: 10px;
+}
+.score {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.text {
+    font-size: 40px;
+    text-align: center;
+}
+.rock img {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.rock img:hover {
+    opacity: 1;
+    transform: scale(1.09);
+}
+.paper img{
+    opacity: 0.5;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.paper img:hover {
+    opacity: 1;
+    transform: scale(1.09);
+
+}
+.scissors img{
+    opacity: 0.5;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.scissors img:hover {
+    opacity: 1;
+    transform: scale(1.09);
+}
+
+@keyframes anime1 {
+    0% {
+        transform: rotate(0);
+        transform-origin: center left;
+    }
+    50% {
+        transform: rotate(15deg);
+        transform-origin: center left;
+    }
+    100% {
+        transform: rotate(0);
+        transform-origin: center left;
+    }
+}
+.gamer1 img{
+    animation-name: anime1;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-iteration-count: 4;
+}
+@keyframes anime2 {
+    0% {
+        transform: rotate(0);
+        transform-origin: center right;
+    }
+    50% {
+        transform: rotate(-15deg);
+        transform-origin: center right;
+    }
+    100% {
+        transform: rotate(0);
+        transform-origin: center right;
+    }
+}
+.gamer2 img{
+    animation-name: anime2;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-iteration-count: 4;
+}

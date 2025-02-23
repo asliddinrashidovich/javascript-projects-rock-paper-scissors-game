@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Rock Paper Scissors</h1>
+        <div class="card">
+            <div class="players">
+                <div class="player-1">
+                    <div class="point">
+                        <img src="images/yangi2.png" class="p1p" alt="" width="50px" height="50px">
+                        <p>You</p>
+                        <div class="box win" id="player1win">0</div>
+                        <div class="box lost" id="player1lost">0</div>
+                        <div class="box tie" id="player1draw">0</div>
+                    </div>
+                    <div id="point1" class="">
+                        <img src="images/imgleft.png"   class="p1" alt="" width="150px" height="100px">
+                    </div>
+
+                </div>
+                <div class="player-2">
+                    <div class="point2" >
+                        <img src="images/yangi1.png" class="p2r"  alt="" width="50px" height="50px">
+                        <p>GPT4</p>
+                        <div class="box win" id="player2win">0</div>
+                        <div class="box lost" id="player2lost">0</div>
+                        <div class="box tie"id="player2draw">0</div>
+                    </div>
+
+                    <div id="point2" class="">
+                        <img src="images/imgright1.png" class="p2" alt="" width="150px" height="100px">
+                    </div>
+                </div>
+            </div>
+            <p class="text" id="text">Let's Play!!</p>
+            <div class="score">
+                <div class="rock">
+                    <img src="images/newrock.png" onclick="rockButton()" id="rockimg" width="100px" height="100px">
+                </div>
+                <div class="paper">
+                    <img src="images/img2.png" id="paperimg" onclick="paperButton()" alt="" width="100px" height="100px">
+                </div>
+                <div class="scissors">
+                    <img src="images/img1.png" id="scissorsimg" onclick="scissorsButton()" alt="" width="100px" height="100px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
